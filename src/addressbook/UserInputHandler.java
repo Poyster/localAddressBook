@@ -9,7 +9,7 @@ public class UserInputHandler implements Serializable {
 
     private Runnable autoSave;
     private Register register = new Register();
-    private ClientSideTest clientTest = new ClientSideTest();
+    private ClientSideTest clientTest = new ClientSideTest(register);
     private FileHandler fileHandler = new FileHandler();
     private final static Logger logger = Logger.getLogger(UserInputHandler.class.getName());
 
@@ -47,9 +47,7 @@ public class UserInputHandler implements Serializable {
                         }
                         break;
                     case "list":
-                        clientTest.printServerContacts();
-                        register.showAllContacts(register.localContacts);
-                        //register.showAllContacts(register.serverContacts);
+                        register.showAllContacts(register.localContacts, register.serverContacts);
                         break;
 
                     case "search":

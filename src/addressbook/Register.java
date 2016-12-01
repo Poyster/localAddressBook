@@ -69,9 +69,10 @@ public class Register implements Serializable {
         logger.log(Level.FINE, "User looked at the help list with commands");
     }
 
-    public void showAllContacts(ArrayList contacts) {
+    public void showAllContacts(ArrayList<Contact> localContacts, ArrayList<Contact> externalContacts) {
 
-        printer.printAnSortedList(contacts);
+        printer.printAnSortedList(localContacts, externalContacts);
+
 
     }
 

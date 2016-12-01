@@ -8,9 +8,10 @@ import java.util.logging.Logger;
 public class Printer {
     private final static Logger logger = Logger.getLogger(Printer.class.getName());
 
-    public void printAnSortedList(ArrayList<Contact> contacts) {
+    public void printAnSortedList(ArrayList<Contact> contacts, ArrayList<Contact> externalContacts) {
         ArrayList<Contact> sortedTempList = new ArrayList<>();
         sortedTempList.addAll(contacts);
+        sortedTempList.addAll(externalContacts);
         Collections.sort(sortedTempList);
 
         System.out.println(contactsToString(sortedTempList));

@@ -9,6 +9,10 @@ public class ClientSideTest {
 
     private Contact contact;
 
+    public ClientSideTest(Register register){
+        this.register = register;
+    }
+
 
     public void receiveFromServer() {
         try {
@@ -33,6 +37,7 @@ public class ClientSideTest {
                     register.serverContacts.add(contact);
                 }
 
+
             }catch(ArrayIndexOutOfBoundsException e){
                 System.out.println("");
             }
@@ -46,9 +51,9 @@ public class ClientSideTest {
 
     }
 
-    public void printServerContacts(){
+    /*public void printServerContacts(){
        register.showAllContacts(register.serverContacts);
-    }
+    }*/
 
 }
 
