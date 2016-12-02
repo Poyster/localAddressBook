@@ -2,8 +2,9 @@ package addressbook;
 
 import java.io.*;
 import java.net.Socket;
+import java.net.SocketException;
 
-public class ExternalContactsHandler {
+public class ExternalContactsHandler implements Runnable{
 
     private Register register = new Register();
     private Contact contact;
@@ -30,21 +31,33 @@ public class ExternalContactsHandler {
 
             try {
                 for (String line = reader.readLine(); line != null; line = reader.readLine()) {
+                    System.out.println(line);
                     String[] splitLine = line.split(" ");
-
-                    contact = new Contact(splitLine[0], splitLine[1], splitLine[2], splitLine[3]);
-                    register.serverContacts.add(contact);
+                    if(splitLine.length > 1) {
+                        contact = new Contact(splitLine[0], splitLine[1], splitLine[2], splitLine[3]);
+                        register.serverContacts.add(contact);
+                    }
                 }
             }catch(ArrayIndexOutOfBoundsException e){
-                System.out.println("");
+                e.printStackTrace();
+
+
             }
             reader.close();
             writer.close();
             socket.close();
 
+        }catch(SocketException e){
+            System.out.println("Connection to External Contacts Server lost");
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+    }
+
+    @Override
+    public void run() {
+        receiveFromServer();
 
     }
 }

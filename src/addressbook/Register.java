@@ -39,10 +39,17 @@ public class Register implements Serializable {
     }
 
     public void deleteContact(String uniqueID) {
+        boolean externalContact = false;
         Contact contactToRemove = null;
         for (Contact contact : localContacts) {
             if (uniqueID.equals(contact.getUniqueID())) {
                 contactToRemove = contact;
+            }
+        }
+        for (Contact contact : serverContacts) {
+            if (uniqueID.equals(contact.getUniqueID())){
+                System.out.println("It is not possible to delete an external contact, please try again");
+                externalContact = true;
             }
         }
         if (contactToRemove != null) {
@@ -50,7 +57,7 @@ public class Register implements Serializable {
             System.out.println("Contact with ID: " + uniqueID + " deleted!");
             logger.log(Level.FINE, "User deleted a contact with ID: " + uniqueID);
         }else {
-            if(contactToRemove == null){
+            if(contactToRemove == null && externalContact == false){
                 System.out.println("No contact with that ID found, please try again.");
                 logger.log(Level.FINE, "User tried to delete contact, but no contact found with input ID");
             }
