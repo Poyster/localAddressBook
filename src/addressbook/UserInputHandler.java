@@ -9,7 +9,7 @@ public class UserInputHandler implements Serializable {
 
     private Runnable autoSave;
     private Register register = new Register();
-    private ClientSideTest clientTest = new ClientSideTest(register);
+    private ExternalContactsHandler externalContactsHandler = new ExternalContactsHandler(register);
     private FileHandler fileHandler = new FileHandler();
     private final static Logger logger = Logger.getLogger(UserInputHandler.class.getName());
 
@@ -21,7 +21,7 @@ public class UserInputHandler implements Serializable {
         thread.start();
         logger.log(Level.INFO, "User starts the Address Book");
 
-        clientTest.receiveFromServer();
+        externalContactsHandler.receiveFromServer();
 
         String menuInput = "";
         Scanner sc = new Scanner(System.in);

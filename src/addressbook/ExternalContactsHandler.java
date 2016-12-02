@@ -3,13 +3,12 @@ package addressbook;
 import java.io.*;
 import java.net.Socket;
 
-public class ClientSideTest {
+public class ExternalContactsHandler {
 
     private Register register = new Register();
-
     private Contact contact;
 
-    public ClientSideTest(Register register){
+    public ExternalContactsHandler(Register register){
         this.register = register;
     }
 
@@ -36,8 +35,6 @@ public class ClientSideTest {
                     contact = new Contact(splitLine[0], splitLine[1], splitLine[2], splitLine[3]);
                     register.serverContacts.add(contact);
                 }
-
-
             }catch(ArrayIndexOutOfBoundsException e){
                 System.out.println("");
             }
@@ -50,10 +47,5 @@ public class ClientSideTest {
         }
 
     }
-
-    /*public void printServerContacts(){
-       register.showAllContacts(register.serverContacts);
-    }*/
-
 }
 

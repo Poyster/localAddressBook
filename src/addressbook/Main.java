@@ -7,7 +7,7 @@ public class Main {
         Program program = new Program();
         program.run();
 
-        //ClientSideTest clientTest = new ClientSideTest();
+        //ExternalContactsHandler clientTest = new ExternalContactsHandler();
 
     }
 

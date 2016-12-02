@@ -1,19 +1,14 @@
-2016-12-01 23:10:38 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
-2016-12-01 23:10:40 FIN    addressbook.Printer printAnSortedList - User looked at an empty contact list
-2016-12-01 23:10:43 INFO   addressbook.FileHandler saveToFile - Saving localContacts
-2016-12-01 23:10:48 INFO   addressbook.FileHandler saveToFile - Saving localContacts
-2016-12-01 23:10:53 INFO   addressbook.FileHandler saveToFile - Saving localContacts
-2016-12-01 23:10:54 FIN    addressbook.Register addContact - User added a new contact
-2016-12-01 23:10:58 INFO   addressbook.FileHandler saveToFile - Saving localContacts
-2016-12-01 23:11:01 FIN    addressbook.Register addContact - User added a new contact
-2016-12-01 23:11:03 INFO   addressbook.FileHandler saveToFile - Saving localContacts
-2016-12-01 23:11:03 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
-2016-12-01 23:11:08 INFO   addressbook.FileHandler saveToFile - Saving localContacts
-2016-12-01 23:11:11 FIN    addressbook.Register searchForContacts - User searched for localContacts with the search phrase: janne
-2016-12-01 23:11:13 INFO   addressbook.FileHandler saveToFile - Saving localContacts
-2016-12-01 23:11:18 INFO   addressbook.FileHandler saveToFile - Saving localContacts
-2016-12-01 23:11:23 INFO   addressbook.FileHandler saveToFile - Saving localContacts
-2016-12-01 23:11:28 INFO   addressbook.FileHandler saveToFile - Saving localContacts
-2016-12-01 23:11:29 FIN    addressbook.Register searchForContacts - User searched for localContacts with the search phrase: ha
-2016-12-01 23:11:29 FIN    addressbook.Register searchForContacts - User searched for localContacts with the search phrase: ha
-2016-12-01 23:11:33 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-02 09:24:46 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-02 09:24:50 FIN    addressbook.Printer printAnSortedList - User looked at an empty contact list
+2016-12-02 09:24:51 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-02 09:24:56 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-02 09:25:01 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-02 09:25:01 FIN    addressbook.Register addContact - User added a new contact
+2016-12-02 09:25:06 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-02 09:25:11 FIN    addressbook.Register addContact - User added a new contact
+2016-12-02 09:25:11 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-02 09:25:12 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-02 09:25:16 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-02 09:25:21 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-02 09:25:21 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-02 09:25:21 INFO   addressbook.Register quitProgram - User exits Address Book
