@@ -47,7 +47,7 @@ public class Register implements Serializable {
             }
         }
         for (Contact contact : serverContacts) {
-            if (uniqueID.equals(contact.getUniqueID())){
+            if (uniqueID.equals(contact.getUniqueID())) {
                 System.out.println("It is not possible to delete an external contact, please try again.");
                 externalContact = true;
             }
@@ -56,8 +56,8 @@ public class Register implements Serializable {
             localContacts.remove(contactToRemove);
             System.out.println("Contact with ID: " + uniqueID + " deleted!");
             logger.log(Level.FINE, "User deleted a contact with ID: " + uniqueID);
-        }else {
-            if(contactToRemove == null && externalContact == false){
+        } else {
+            if (contactToRemove == null && externalContact == false) {
                 System.out.println("No contact with that ID found, please try again.");
                 logger.log(Level.FINE, "User tried to delete contact, but no contact found with input ID.");
             }
@@ -126,7 +126,6 @@ public class Register implements Serializable {
     public void invalidCommand(String command) {
         System.out.println(command + " is not a valid command, please try again.");
     }
-
 
 
 }
