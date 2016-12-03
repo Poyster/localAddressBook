@@ -4,12 +4,12 @@ import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 
-public class ExternalContactsHandler implements Runnable{
+public class ExternalContactsHandler implements Runnable {
 
     private Register register = new Register();
     private Contact contact;
 
-    public ExternalContactsHandler(Register register){
+    public ExternalContactsHandler(Register register) {
         this.register = register;
     }
 
@@ -31,14 +31,13 @@ public class ExternalContactsHandler implements Runnable{
 
             try {
                 for (String line = reader.readLine(); line != null; line = reader.readLine()) {
-                    System.out.println(line);
                     String[] splitLine = line.split(" ");
-                    if(splitLine.length > 1) {
+                    if (splitLine.length > 1) {
                         contact = new Contact(splitLine[0], splitLine[1], splitLine[2], splitLine[3]);
                         register.serverContacts.add(contact);
                     }
                 }
-            }catch(ArrayIndexOutOfBoundsException e){
+            } catch (ArrayIndexOutOfBoundsException e) {
                 e.printStackTrace();
 
 
@@ -47,8 +46,8 @@ public class ExternalContactsHandler implements Runnable{
             writer.close();
             socket.close();
 
-        }catch(SocketException e){
-            System.out.println("Connection to External Contacts Server lost");
+        } catch (SocketException e) {
+            System.out.println("Connection to External Contacts Server lost.");
         } catch (Exception e) {
             e.printStackTrace();
         }

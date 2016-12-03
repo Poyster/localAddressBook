@@ -31,7 +31,7 @@ public class Register implements Serializable {
         contact = new Contact(firstName, surName, emailAddress, uniqueID);
         localContacts.add(contact);
         System.out.println("New contact successfully added.");
-        logger.log(Level.FINE, "User added a new contact");
+        logger.log(Level.FINE, "User added a new contact.");
     }
 
     public ArrayList<Contact> getLocalContacts() {
@@ -48,7 +48,7 @@ public class Register implements Serializable {
         }
         for (Contact contact : serverContacts) {
             if (uniqueID.equals(contact.getUniqueID())){
-                System.out.println("It is not possible to delete an external contact, please try again");
+                System.out.println("It is not possible to delete an external contact, please try again.");
                 externalContact = true;
             }
         }
@@ -59,7 +59,7 @@ public class Register implements Serializable {
         }else {
             if(contactToRemove == null && externalContact == false){
                 System.out.println("No contact with that ID found, please try again.");
-                logger.log(Level.FINE, "User tried to delete contact, but no contact found with input ID");
+                logger.log(Level.FINE, "User tried to delete contact, but no contact found with input ID.");
             }
         }
 
@@ -73,7 +73,7 @@ public class Register implements Serializable {
                 "delete\t - Delete a contact using the localContacts unique ID\n" +
                 "quit\t - Exit the Address Book\n");
 
-        logger.log(Level.FINE, "User looked at the help list with commands");
+        logger.log(Level.FINE, "User looked at the help list with commands.");
     }
 
     public void showAllContacts(ArrayList<Contact> localContacts, ArrayList<Contact> externalContacts) {
@@ -103,7 +103,7 @@ public class Register implements Serializable {
         }
         if (result == null) {
             System.out.println("No contact found.");
-            logger.log(Level.FINE, "User searched for localContacts with no result found");
+            logger.log(Level.FINE, "User searched for localContacts with no result found.");
         }
 
     }
@@ -120,7 +120,7 @@ public class Register implements Serializable {
     }
 
     public void toMuchInputRemovedAndAddedContact() {
-        System.out.println("To much input added, removed unnecessary input");
+        System.out.println("To much input added, removed unnecessary input.");
     }
 
     public void invalidCommand(String command) {

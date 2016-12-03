@@ -11,7 +11,7 @@ public class LogHandler {
     private final static Logger logger = Logger.getLogger(LogHandler.class.getName());
 
     public static void setupLogging() {
-        String loggingFilePath = "/C:\\Users\\Thomas\\IdeaProjects\\localAddressBook\\src\\logging.properties";
+        String loggingFilePath = "logging.properties";
         try (FileInputStream fileInputStream = new FileInputStream(loggingFilePath)) {
             LogManager.getLogManager().readConfiguration(fileInputStream);
         } catch (IOException e) {
