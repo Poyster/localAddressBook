@@ -50,7 +50,7 @@ public class Register implements Serializable {
             if (uniqueID.equals(contact.getUniqueID())) {
                 System.out.println("It is not possible to delete an external contact, please try again.");
                 externalContact = true;
-            }
+                logger.log(Level.FINE, "User tried to delete external contact.");            }
         }
         if (contactToRemove != null) {
             localContacts.remove(contactToRemove);

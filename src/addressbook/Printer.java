@@ -22,7 +22,6 @@ public class Printer {
             System.out.println("There are currently no localContacts in the address book.");
             logger.log(Level.FINE, "User looked at an empty contact list");
         }
-
     }
 
     public void printAnSearchedList(ArrayList<Contact> contacts) {
