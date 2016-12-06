@@ -85,3 +85,297 @@
 2016-12-06 15:07:02 INFO   addressbook.FileHandler saveToFile - Saving localContacts
 2016-12-06 15:07:05 INFO   addressbook.FileHandler saveToFile - Saving localContacts
 2016-12-06 15:07:05 INFO   addressbook.Register quitProgram - User exits Address Book
+2016-12-06 20:26:16 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:26:18 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 20:26:21 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:26:26 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:26:31 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:26:34 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:36)
+	at addressbook.UserInputHandler.lambda$mainMenu$1(UserInputHandler.java:20)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-06 20:26:36 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:26:41 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:36)
+	at addressbook.UserInputHandler.lambda$mainMenu$0(UserInputHandler.java:19)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-06 20:26:41 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:26:46 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:26:47 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:26:47 INFO   addressbook.Register quitProgram - User exits Address Book
+2016-12-06 20:33:24 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:33:24 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:33:24 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:33:24 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 2 to external register.
+2016-12-06 20:33:24 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 2 to external register.
+2016-12-06 20:33:24 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 3 to external register.
+2016-12-06 20:33:24 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 4 to external register.
+2016-12-06 20:33:29 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:33:34 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:33:39 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:33:44 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:33:49 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:33:54 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:33:58 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:33:58 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:33:58 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:33:58 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 2 to external register.
+2016-12-06 20:33:58 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 2 to external register.
+2016-12-06 20:33:58 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 3 to external register.
+2016-12-06 20:33:58 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 4 to external register.
+2016-12-06 20:34:03 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:34:33 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:34:33 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:34:33 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:34:35 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 20:34:38 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:36:19 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:36:20 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:36:20 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:36:20 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 1 to external register.
+2016-12-06 20:36:20 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 1 to external register.
+2016-12-06 20:36:20 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 2 to external register.
+2016-12-06 20:36:20 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 3 to external register.
+2016-12-06 20:36:20 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 3 to external register.
+2016-12-06 20:36:20 INFO   addressbook.ExternalContactsHandler receiveFromServer - Added 3 to external register.
+2016-12-06 20:36:22 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 20:36:24 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:36:24 INFO   addressbook.Register quitProgram - User exits Address Book
+2016-12-06 20:38:00 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:38:00 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:38:00 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:38:03 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 20:38:05 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:38:05 INFO   addressbook.Register quitProgram - User exits Address Book
+2016-12-06 20:39:33 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:39:33 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:39:33 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:39:37 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 20:39:38 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:39:39 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:39:39 INFO   addressbook.Register quitProgram - User exits Address Book
+2016-12-06 20:42:45 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:42:45 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:42:45 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:42:50 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:42:55 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:43:00 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:45:31 INFO   addressbook.UserInputHandler mainMenu - Added 0 contacts to external register.
+2016-12-06 20:45:31 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:45:31 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:45:31 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:45:33 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 20:45:36 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:45:36 INFO   addressbook.Register quitProgram - User exits Address Book
+2016-12-06 20:47:29 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:47:29 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:47:29 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:47:29 INFO   addressbook.UserInputHandler mainMenu - Added 0 contacts to external register.
+2016-12-06 20:47:34 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:47:39 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:47:44 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:47:49 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:47:54 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:47:59 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:48:04 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:48:09 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:48:14 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:48:21 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:48:21 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:48:21 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:48:27 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:48:27 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:48:27 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:48:32 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:48:37 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:49:10 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:49:10 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:49:10 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:49:12 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 20:49:15 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:49:20 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:49:25 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:49:30 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:49:35 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:49:40 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:49:45 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:49:50 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:50:32 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:50:32 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:50:32 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:50:37 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:50:42 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:50:46 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:50:46 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:50:46 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server(s), to get contacts in return.
+2016-12-06 20:50:51 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:50:56 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:51:01 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:51:06 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:52:08 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:52:13 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:52:18 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:52:23 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:52:28 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:52:33 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:52:38 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:52:43 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:52:48 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:52:53 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:52:58 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:03 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:08 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:13 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:18 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:23 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:28 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:33 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:38 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:43 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:48 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:53 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:58 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:53:58 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:37)
+	at addressbook.UserInputHandler.lambda$mainMenu$0(UserInputHandler.java:19)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-06 20:54:00 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:37)
+	at addressbook.UserInputHandler.lambda$mainMenu$1(UserInputHandler.java:20)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-06 20:54:03 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:54:08 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:54:18 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:54:23 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:54:25 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 20:54:28 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:54:33 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:54:38 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:54:43 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:54:48 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:54:51 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:37)
+	at addressbook.UserInputHandler.lambda$mainMenu$0(UserInputHandler.java:19)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-06 20:54:53 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:54:55 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:37)
+	at addressbook.UserInputHandler.lambda$mainMenu$1(UserInputHandler.java:20)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-06 20:54:58 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:55:03 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:55:06 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:55:07 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:23)
+	at addressbook.UserInputHandler.lambda$mainMenu$1(UserInputHandler.java:20)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-06 20:55:07 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:23)
+	at addressbook.UserInputHandler.lambda$mainMenu$0(UserInputHandler.java:19)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-06 20:55:11 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:55:14 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 20:55:16 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:55:21 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:55:32 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 20:55:34 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 20:55:37 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:55:42 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:55:47 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:55:52 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:55:57 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:56:02 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:56:07 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:56:12 INFO   addressbook.FileHandler saveToFile - Saving localContacts

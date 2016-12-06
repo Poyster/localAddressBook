@@ -3,17 +3,18 @@ package addressbook;
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ExternalContactsHandler {
 
     private Register register = new Register();
     private Contact contact;
-
+    private final static Logger logger = Logger.getLogger(ExternalContactsHandler.class.getName());
 
     public ExternalContactsHandler(Register register) {
         this.register = register;
     }
-
 
     public void receiveFromServer(String ipAddress, int serverPort) {
 
@@ -26,6 +27,7 @@ public class ExternalContactsHandler {
 
             writer.println("getall");
             writer.flush();
+
 
             InputStream is = socket.getInputStream();
             InputStreamReader isr = new InputStreamReader(is);
@@ -41,8 +43,6 @@ public class ExternalContactsHandler {
                 }
             } catch (ArrayIndexOutOfBoundsException e) {
                 e.printStackTrace();
-
-
             }
             reader.close();
             writer.close();
@@ -50,6 +50,8 @@ public class ExternalContactsHandler {
 
         } catch (SocketException e) {
             System.out.println("Connection to External Contacts Server lost.");
+            logger.log(Level.SEVERE, "Connection to External Contacts Server lost.", e);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
