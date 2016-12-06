@@ -15,14 +15,14 @@ public class AutoSave implements Runnable{
     @Override
     public void run() {
         while (true){
-            try{
-                Thread.sleep(5000);
-            }catch (InterruptedException e){
-                logger.log(Level.SEVERE, "InterruptedException", e);
-            }
-            fileHandler.saveToFile(register.getLocalContacts());
-
+            try {
+                    Thread.sleep(5000);
+                }catch(InterruptedException e){
+                    logger.log(Level.SEVERE, "InterruptedException", e);
+                }
+                synchronized (this) {
+                    fileHandler.saveToFile(register.getLocalContacts());
+                }
         }
-
     }
 }

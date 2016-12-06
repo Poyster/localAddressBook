@@ -10,11 +10,6 @@ public class Program {
 
     public void run() {
         setupLogging();
-
         userInputHandler.mainMenu();
-
-
-
-
     }
 }

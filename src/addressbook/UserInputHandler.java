@@ -9,19 +9,18 @@ public class UserInputHandler implements Serializable {
 
     private Runnable autoSave;
     private Register register = new Register();
-    private Runnable externalContactsHandler;
+    private ExternalContactsHandler externalContactsHandler = new ExternalContactsHandler(register);
     private FileHandler fileHandler = new FileHandler();
     private final static Logger logger = Logger.getLogger(UserInputHandler.class.getName());
 
     public void mainMenu() {
 
         externalContactsHandler = new ExternalContactsHandler(register);
-        Thread thread2 = new Thread(externalContactsHandler);
-        thread2.start();
+        new Thread(() -> externalContactsHandler.receiveFromServer("localhost", 61616)).start();
+        new Thread(() -> externalContactsHandler.receiveFromServer("localhost", 61614)).start();
 
         autoSave = new AutoSave(register);
-        Thread thread = new Thread(autoSave);
-        thread.start();
+        new Thread(autoSave).start();
         logger.log(Level.INFO, "User starts the Address Book");
 
         String menuInput = "";

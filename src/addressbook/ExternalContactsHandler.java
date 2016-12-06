@@ -4,25 +4,27 @@ import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 
-public class ExternalContactsHandler implements Runnable {
+public class ExternalContactsHandler {
 
     private Register register = new Register();
     private Contact contact;
+
 
     public ExternalContactsHandler(Register register) {
         this.register = register;
     }
 
 
-    public void receiveFromServer() {
+    public void receiveFromServer(String ipAddress, int serverPort) {
+
         try {
 
-            Socket socket = new Socket("localhost", 61616);
+            Socket socket = new Socket(ipAddress, serverPort);
 
             OutputStream outputStream = socket.getOutputStream();
             PrintWriter writer = new PrintWriter(outputStream);
 
-            writer.println("getAll");
+            writer.println("getall");
             writer.flush();
 
             InputStream is = socket.getInputStream();
@@ -51,13 +53,6 @@ public class ExternalContactsHandler implements Runnable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-    }
-
-    @Override
-    public void run() {
-        receiveFromServer();
-
     }
 }
 

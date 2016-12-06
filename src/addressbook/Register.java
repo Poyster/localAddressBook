@@ -25,7 +25,7 @@ public class Register implements Serializable {
         serverContacts = new ArrayList<>();
     }
 
-    public void addContact(String firstName, String surName, String emailAddress) {
+    public synchronized void addContact(String firstName, String surName, String emailAddress) {
 
         String uniqueID = UUID.randomUUID().toString();
         contact = new Contact(firstName, surName, emailAddress, uniqueID);
