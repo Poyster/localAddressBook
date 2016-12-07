@@ -21,11 +21,14 @@ public class ExternalContactsHandler {
         try {
 
             Socket socket = new Socket(ipAddress, serverPort);
-
+            logger.log(Level.INFO, "Connection to external server with ip: " + ipAddress+ " and port: " +serverPort+ " successful");
             OutputStream outputStream = socket.getOutputStream();
             PrintWriter writer = new PrintWriter(outputStream);
 
             writer.println("getall");
+            logger.log(Level.INFO, "Sent getall-message to external server with ip: " + ipAddress+ " and port: " +serverPort);
+            writer.println("exit");
+            logger.log(Level.INFO, "Sent exit-message to external server with ip: " + ipAddress+ " and port: " +serverPort);
             writer.flush();
 
 
@@ -39,21 +42,22 @@ public class ExternalContactsHandler {
                     if (splitLine.length > 1) {
                         contact = new Contact(splitLine[1], splitLine[2], splitLine[3], splitLine[0]);
                         register.serverContacts.add(contact);
+                        logger.log(Level.INFO, "New external contact added: " + line);
                     }
                 }
             } catch (ArrayIndexOutOfBoundsException e) {
-                e.printStackTrace();
+                logger.log(Level.INFO, "ArrayIndexOutOfBoundsException", e);
             }
             reader.close();
             writer.close();
             socket.close();
 
         } catch (SocketException e) {
-            System.out.println("Connection to External Contacts Server lost.");
-            logger.log(Level.SEVERE, "Connection to External Contacts Server lost.", e);
+            System.out.println("Connection to External Contacts Server with ip: " +ipAddress+ " and port: "+serverPort+ " not available at the moment.");
+            logger.log(Level.SEVERE, "Connection to External Contacts Server with ip: " +ipAddress+ " and port: "+serverPort+ " not available at the moment.", e);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.INFO, "Something wrong occurred: ", e);
         }
     }
 }
