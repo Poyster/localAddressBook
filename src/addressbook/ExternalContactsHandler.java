@@ -37,7 +37,7 @@ public class ExternalContactsHandler {
                 for (String line = reader.readLine(); line != null; line = reader.readLine()) {
                     String[] splitLine = line.split(" ");
                     if (splitLine.length > 1) {
-                        contact = new Contact(splitLine[0], splitLine[1], splitLine[2], splitLine[3]);
+                        contact = new Contact(splitLine[1], splitLine[2], splitLine[3], splitLine[0]);
                         register.serverContacts.add(contact);
                     }
                 }

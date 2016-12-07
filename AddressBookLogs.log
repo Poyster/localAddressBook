@@ -379,3 +379,90 @@ java.net.ConnectException: Connection refused: connect
 2016-12-06 20:56:02 INFO   addressbook.FileHandler saveToFile - Saving localContacts
 2016-12-06 20:56:07 INFO   addressbook.FileHandler saveToFile - Saving localContacts
 2016-12-06 20:56:12 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:56:17 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 20:56:18 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:37)
+	at addressbook.UserInputHandler.lambda$mainMenu$1(UserInputHandler.java:20)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-06 20:56:20 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:37)
+	at addressbook.UserInputHandler.lambda$mainMenu$0(UserInputHandler.java:19)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-06 20:56:22 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 21:32:19 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 21:32:21 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 21:32:24 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 21:32:29 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 21:33:08 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 21:33:13 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 21:49:08 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 21:49:13 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 21:49:18 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 21:49:23 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 21:49:28 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 21:49:52 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-06 21:49:55 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-06 21:49:57 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 21:50:02 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 21:50:07 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-06 21:50:12 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-07 01:21:31 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-07 01:21:36 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-07 01:21:40 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:37)
+	at addressbook.UserInputHandler.lambda$mainMenu$1(UserInputHandler.java:20)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-07 01:21:41 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-07 01:21:44 ALLVARLIG addressbook.ExternalContactsHandler receiveFromServer - Connection to External Contacts Server lost.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at addressbook.ExternalContactsHandler.receiveFromServer(ExternalContactsHandler.java:37)
+	at addressbook.UserInputHandler.lambda$mainMenu$0(UserInputHandler.java:19)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-07 01:21:46 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-07 01:21:50 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-07 01:21:53 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-07 01:21:55 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-07 01:22:00 INFO   addressbook.FileHandler saveToFile - Saving localContacts
