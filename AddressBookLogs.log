@@ -374,3 +374,22 @@ java.net.ConnectException: Connection refused: connect
 2016-12-07 14:32:44 INFO   addressbook.ExternalContactsHandler receiveFromServer - New external contact added: 54acc2fb-f40e-4734-af6b-fd1ebb8d4cfa Hasse Aro ha@hotmail.com
 2016-12-07 14:32:47 INFO   addressbook.FileHandler saveToFile - Saving localContacts
 2016-12-07 14:32:47 INFO   addressbook.Register quitProgram - User exits Address Book
+2016-12-07 14:36:47 INFO   addressbook.UserInputHandler mainMenu - User starts the Address Book
+2016-12-07 14:36:47 INFO   addressbook.ExternalContactsHandler receiveFromServer - Connection to external server with ip: localhost and port: 61614 successful
+2016-12-07 14:36:47 INFO   addressbook.ExternalContactsHandler receiveFromServer - Connection to external server with ip: localhost and port: 61616 successful
+2016-12-07 14:36:47 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server with ip: localhost and port: 61614
+2016-12-07 14:36:47 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent exit-message to external server with ip: localhost and port: 61614
+2016-12-07 14:36:47 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent getall-message to external server with ip: localhost and port: 61616
+2016-12-07 14:36:47 INFO   addressbook.ExternalContactsHandler receiveFromServer - Sent exit-message to external server with ip: localhost and port: 61616
+2016-12-07 14:36:47 INFO   addressbook.ExternalContactsHandler receiveFromServer - New external contact added: 02fe564f-7ac7-42ca-817b-b1c252367bf3 Janne Josefsson jj@gmail.com
+2016-12-07 14:36:47 INFO   addressbook.ExternalContactsHandler receiveFromServer - New external contact added: 54acc2fb-f40e-4734-af6b-fd1ebb8d4cfa Hasse Aro ha@hotmail.com
+2016-12-07 14:36:47 INFO   addressbook.ExternalContactsHandler receiveFromServer - New external contact added: b6da8b3f-d621-4e1c-b43a-2d937dad639b Magnus Andersson ma@gmail.com
+2016-12-07 14:36:47 INFO   addressbook.ExternalContactsHandler receiveFromServer - New external contact added: a86a3e76-43d8-425a-bea5-a0f66a4d54c8 Bengt Nilsson bn@hotmail.com
+2016-12-07 14:36:49 FIN    addressbook.Printer printAnSortedList - User looked at a list of all localContacts
+2016-12-07 14:36:52 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-07 14:36:57 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-07 14:36:58 FIN    addressbook.Register searchForContacts - User searched for localContacts with the search phrase: ma
+2016-12-07 14:37:02 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-07 14:37:07 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-07 14:37:07 INFO   addressbook.FileHandler saveToFile - Saving localContacts
+2016-12-07 14:37:07 INFO   addressbook.Register quitProgram - User exits Address Book

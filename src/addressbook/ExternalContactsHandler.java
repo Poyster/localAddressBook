@@ -21,14 +21,14 @@ public class ExternalContactsHandler {
         try {
 
             Socket socket = new Socket(ipAddress, serverPort);
-            logger.log(Level.INFO, "Connection to external server with ip: " + ipAddress+ " and port: " +serverPort+ " successful");
+            logger.log(Level.INFO, "Connection to external server with ip: " + ipAddress + " and port: " + serverPort + " successful");
             OutputStream outputStream = socket.getOutputStream();
             PrintWriter writer = new PrintWriter(outputStream);
 
             writer.println("getall");
-            logger.log(Level.INFO, "Sent getall-message to external server with ip: " + ipAddress+ " and port: " +serverPort);
+            logger.log(Level.INFO, "Sent getall-message to external server with ip: " + ipAddress + " and port: " + serverPort);
             writer.println("exit");
-            logger.log(Level.INFO, "Sent exit-message to external server with ip: " + ipAddress+ " and port: " +serverPort);
+            logger.log(Level.INFO, "Sent exit-message to external server with ip: " + ipAddress + " and port: " + serverPort);
             writer.flush();
 
 
@@ -53,8 +53,8 @@ public class ExternalContactsHandler {
             socket.close();
 
         } catch (SocketException e) {
-            System.out.println("Connection to External Contacts Server with ip: " +ipAddress+ " and port: "+serverPort+ " not available at the moment.");
-            logger.log(Level.SEVERE, "Connection to External Contacts Server with ip: " +ipAddress+ " and port: "+serverPort+ " not available at the moment.", e);
+            System.out.println("Connection to External Contacts Server with ip: " + ipAddress + " and port: " + serverPort + " not available at the moment.");
+            logger.log(Level.SEVERE, "Connection to External Contacts Server with ip: " + ipAddress + " and port: " + serverPort + " not available at the moment.", e);
 
         } catch (Exception e) {
             logger.log(Level.INFO, "Something wrong occurred: ", e);
