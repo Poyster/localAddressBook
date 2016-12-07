@@ -26,7 +26,6 @@ public class UserInputHandler implements Serializable {
         String menuInput = "";
         Scanner sc = new Scanner(System.in);
 
-
         while (!menuInput.equals("quit")) {
 
             System.out.println("\nWelcome! Type 'help' to see available commands" + '\n');

@@ -3,7 +3,7 @@ package addressbook;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class AutoSave implements Runnable{
+public class AutoSave implements Runnable {
     private Register register = new Register();
     private final static Logger logger = Logger.getLogger(AutoSave.class.getName());
     private FileHandler fileHandler = new FileHandler();
@@ -14,15 +14,15 @@ public class AutoSave implements Runnable{
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             try {
-                    Thread.sleep(5000);
-                }catch(InterruptedException e){
-                    logger.log(Level.SEVERE, "InterruptedException", e);
-                }
-                synchronized (this) {
-                    fileHandler.saveToFile(register.getLocalContacts());
-                }
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                logger.log(Level.SEVERE, "InterruptedException", e);
+            }
+            synchronized (this) {
+                fileHandler.saveToFile(register.getLocalContacts());
+            }
         }
     }
 }

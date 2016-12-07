@@ -15,10 +15,9 @@ public class Printer {
         Collections.sort(sortedTempList);
 
         System.out.println(contactsToString(sortedTempList));
-        if(!contacts.isEmpty()) {
+        if (!contacts.isEmpty()) {
             logger.log(Level.FINE, "User looked at a list of all localContacts");
-        }
-        else if (contacts.isEmpty()) {
+        } else if (contacts.isEmpty()) {
             System.out.println("There are currently no localContacts in the address book.");
             logger.log(Level.FINE, "User looked at an empty contact list");
         }
